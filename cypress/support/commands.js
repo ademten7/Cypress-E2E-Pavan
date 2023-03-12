@@ -25,3 +25,13 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 /// <reference types="Cypress"/>
 /// <reference types="@cypress/xpath"/>
+
+// to create a custom commands
+Cypress.Commands.add("getIframe", (iframe) => {
+  // getIframe==> our custom name , iframe==> element name which we located
+  return cy
+    .get("#mce_0_ifr")
+    .its("0.contentDocument.body") //0==> we have only one document
+    .should("be.visible")
+    .then(cy.wrap);
+});

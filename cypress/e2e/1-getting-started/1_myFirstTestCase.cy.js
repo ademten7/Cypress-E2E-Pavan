@@ -4,5 +4,8 @@ describe("First Suit", () => {
     cy.visit("https://opensource-demo.orangehrmlive.com/");
     cy.title().should("eq", "OrangeHRM");
   });
-  it("", () => {});
+  it("Visit web Site", () => {
+    cy.visit("https://opensource-demo.orangehrmlive.com/");
+    cy.title().should("eq", "OrangeHRM");
+  });
 });
