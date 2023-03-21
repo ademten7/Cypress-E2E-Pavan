@@ -1,4 +1,6 @@
 /// //<reference types="cypress"/> commands file icine ekleyince buna gerek yok
+
+//PAGE OBJECT MODEL PATTERN
 import Login from "../../PageObjects/LoginPage_SecondApproach";
 describe("Login Page", () => {
     it("verify Login Page with POM", () => {
@@ -11,7 +13,7 @@ describe("Login Page", () => {
         login.verifyLogin();
     });
 
-
+//******************************************IMPORTANT *************************************************/
     //we can put our data user and password datas in fixture folder 
     it.only("verify Login Page with POM and from fixtures folder ", () => {
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
