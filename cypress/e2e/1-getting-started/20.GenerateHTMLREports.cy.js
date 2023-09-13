@@ -26,7 +26,7 @@ this is the hedless test
 */
 
 /*
-npx cypress run --spec <relative part of file> --browser chrome   ===> this headless
+npx cypress run --spec <relative part of file> --browser chrome  
 npx cypress run --spec <relative part of file> --browser chrome   ===>  this is headed
 
 */
